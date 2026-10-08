@@ -13,6 +13,7 @@ The principle behind everything: what makes material stick is me pulling it out 
 _Images/                   pasted images and other attachments
 Home.md                    front page
 Tracker.md                 everything I need to do or follow up (see "Tracker")
+Lectures.md                Kanban board of where each lecture is in the routine
 University/
   University.md            links to each module hub
   <Code> - <Module Name>/
@@ -182,28 +183,16 @@ When you create notes for a lecture, add them under that lecture's heading in te
 
 ## Tracker
 
-`Tracker.md` is the single place for what's outstanding. At the start of a session, read it and tell me briefly what's due or overdue. When we finish a step, update it in the same turn.
+What's outstanding lives in two files. At the start of a session, read both and tell me briefly what's due or overdue. When we finish a step, update them in the same turn.
 
-If the file already has a format, keep it. Otherwise use checkbox lists under these headings, one line per item with the module code first:
+**`Lectures.md`** is a Kanban board (Kanban plugin) with columns `To catch up on (missed)`, `To watch (partial rewatch)`, `To recall and make notes on`, `To test myself on`. Each card is one line: `- [ ] <Code> Lecture N @{YYYY-MM-DD}`, where the date is when it entered its current column. Keep the plugin's frontmatter and the `%% kanban:settings %%` block at the bottom intact.
 
-```markdown
-## Lectures
-### To catch up on (missed)
-### To watch (partial rewatch needed)
-### To recall and make notes on
-### To test myself on
+- A lecture moves right across the columns as it progresses: attended or caught up, then recalled and noted, then tested. When moving a card, cut the line into the new column and update its date. Remove it once I've been tested on it in a weekly session.
 
-## Past paper questions this week
+**`Tracker.md`** holds everything else as checkbox lists under `## Past paper questions this week`, `## Questions for lecturers`, `## Events and deadlines` and `## Other`, one line per item with the module code first. A Tasks plugin query at the top (`## Due soon`) shows overdue items and items due in the next 7 days; don't edit it.
 
-## Questions for lecturers
-
-## Events and deadlines
-
-## Other
-```
-
-- A lecture moves down the lecture lists as it progresses: attended or caught up, then recalled and noted, then tested. Remove it once I've been tested on it in a weekly session.
-- Add dates to deadlines and sort that section by date.
+- Give anything with a deadline a Tasks due date: `- [ ] 50002 Coursework 1 📅 2026-10-20`. Sort `Events and deadlines` by date.
+- Mark a finished item with `- [x]` and remove it at the next session start.
 - Flag it if the catch-up list has more than two lectures for one module, or a lecture has sat in any list for more than a week.
 - Don't add items I didn't ask for, other than the lecture steps, weekly questions and lecturer questions this system produces.
 

@@ -2,5 +2,9 @@
   "obsidian-git",
   "ink",
   "obsidian-excalidraw-plugin",
-  "homepage"
+  "homepage",
+  "obsidian-icon-folder",
+  "obsidian-tasks-plugin",
+  "obsidian-spaced-repetition",
+  "obsidian-kanban"
 ]

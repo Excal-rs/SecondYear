@@ -1,12 +1,12 @@
-## Lectures
-### To catch up on (missed)
+Lecture pipeline: [[Lectures]]
 
-### To watch (partial rewatch needed)
-
-### To recall and make notes on
-- [ ] 50001 Lecture 1
-
-### To test myself on
+## Due soon
+```tasks
+not done
+due before in 7 days
+path does not include Personal
+sort by due
+```
 
 ## Past paper questions this week
 
@@ -15,4 +15,4 @@
 ## Events and deadlines
 
 ## Other
-- [ ] All Autumn modules: find out which lectures have happened so far (this weekend), then add them to the lecture lists
+- [ ] All Autumn modules: find out which lectures have happened so far, then add them to the lecture board 📅 2026-10-11

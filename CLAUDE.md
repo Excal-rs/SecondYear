@@ -7,25 +7,25 @@ The principle behind everything: what makes material stick is me pulling it out 
 ## Vault layout
 
 ```
-.papers/<Module Code>/     gitignored. Past paper PDFs, plus Index.md
-.lectures/<Module Code>/   gitignored. Slides, transcripts, lecturer's notes, course notes
-.tutorials/<Module Code>/  gitignored. Tutorial and problem sheets, with any answers
-_Images/                   pasted images and other attachments
-Home.md                    front page
-Tracker.md                 everything I need to do or follow up (see "Tracker")
-Lectures.md                Kanban board of where each lecture is in the routine
+.papers/<Code> - <Module>/     gitignored. Past paper PDFs, plus Index.md
+.lectures/<Code> - <Module>/   gitignored. Slides, transcripts, lecturer's notes, course notes
+.tutorials/<Code> - <Module>/  gitignored. Tutorial and problem sheets, with any answers
+_Images/                       pasted images and other attachments
+Home.md                        front page
+Tracker.md                     everything I need to do or follow up (see "Tracker")
+Lectures.md                    Kanban board of where each lecture is in the routine
 University/
-  University.md            links to each module hub
+  University.md                links to each module hub
   <Code> - <Module Name>/
     <Code> - <Module Name>.md    module hub
     <Concept>.md                 atomic notes, one per concept
-Personal/                  not study material. Leave it alone unless I ask.
+Personal/                      not study material. Leave it alone unless I ask.
 ```
 
 - **A module folder contains its hub note and atomic notes, and nothing else.** No subfolders, no lecture notes, no logs, no scratch files. Lectures are tracked by tag and listed in the hub, not by folder.
 - Folder names starting with a dot are hidden inside Obsidian, so I won't see those files in the app. Read them from disk when you need them, and refer to them in notes by plain text (for example "2022 Q3"), not by link.
 - If the vault doesn't match this, follow what exists and tell me rather than reorganising it.
-- I download materials as zips or PDFs into the vault root. Sort them into `.lectures/<code>/` (slides, notes, transcripts, reference sheets, links) or `.tutorials/<code>/` (tutorial and problem sheets and their answers), strip download-order prefixes like `(3) ` from filenames, and delete the zip.
+- I download materials as zips or PDFs into the vault root. Sort them into `.lectures/<Code> - <Module>/` (slides, notes, transcripts, reference sheets, links) or `.tutorials/<Code> - <Module>/` (tutorial and problem sheets and their answers), strip download-order prefixes like `(3) ` from filenames, and delete the zip.
 - **Materials being uploaded doesn't mean the lecture has been taught.** Lecturers often upload slides and tutorials weeks ahead. Never add a lecture to the Tracker or write notes for it just because its materials exist; ask me which lectures have happened.
 
 ### Git
@@ -226,7 +226,7 @@ Computing gives few problem sheets, so past papers are my main practice. Treat t
 
 - **Reserved papers:** the three most recent years of each module in `.papers/` are for timed mocks before exams. Never draw weekly questions from them, and never show me their contents unless I say I'm doing a mock.
 - **Weekly session:** each week, find the questions from older papers that match the lectures in "To test myself on", and add one or two questions from earlier weeks' topics. List them under "Past paper questions this week" in the Tracker by paper and question number.
-- **Index:** keep `.papers/<Module Code>/Index.md` as a table of paper, question, topic, matching lectures, attempted, and result, so you don't have to re-read every PDF each week.
+- **Index:** keep `.papers/<Code> - <Module>/Index.md` as a table of paper, question, topic, matching lectures, attempted, and result, so you don't have to re-read every PDF each week.
 - Older papers may cover content that's no longer taught. If a question doesn't match this year's sources, tell me rather than setting it.
 - **Don't give me solutions before I've attempted the question in full.** When marking my attempt, check it against the sources and say how confident you are. For proofs and formal reasoning, be explicit when you're unsure, because I may compare with coursemates.
 - **Tutorials:** sheets in `.tutorials/` are practice for the matching lecture once it's been taught. Like past papers, don't show me the answers file before I've attempted the question.

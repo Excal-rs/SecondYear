@@ -40,6 +40,8 @@ The vault is a git repo that the Obsidian Git plugin backs up automatically, so 
 
 Each module's folder and hub note are named `<Code> - <Module>`, for example `50004 - Operating Systems`. The tag is what goes in each note's frontmatter.
 
+Everywhere else (in conversation, Tracker items and Kanban cards), never refer to a module by its code alone. Always write `<Module> - <Code>`, for example `Operating Systems - 50004`.
+
 | Code | Module | Tag | Term | Type | Materials |
 |---|---|---|---|---|---|
 | 50001 | Algorithm Design and Analysis | `AlgorithmDesignAndAnalysis` | Autumn | theory | TBC |
@@ -185,13 +187,13 @@ When you create notes for a lecture, add them under that lecture's heading in te
 
 What's outstanding lives in two files. At the start of a session, read both and tell me briefly what's due or overdue. When we finish a step, update them in the same turn.
 
-**`Lectures.md`** is a Kanban board (Kanban plugin) with columns `To catch up on (missed)`, `To watch (partial rewatch)`, `To recall and make notes on`, `To test myself on`. Each card is one line: `- [ ] <Code> Lecture N @{YYYY-MM-DD}`, where the date is when it entered its current column. Keep the plugin's frontmatter and the `%% kanban:settings %%` block at the bottom intact.
+**`Lectures.md`** is a Kanban board (Kanban plugin) with columns `To catch up on (missed)`, `To watch (partial rewatch)`, `To recall and make notes on`, `To test myself on`. Each card is one line: `- [ ] <Module> - <Code> Lecture N @{YYYY-MM-DD}`, where the date is when it entered its current column. Keep the plugin's frontmatter and the `%% kanban:settings %%` block at the bottom intact.
 
 - A lecture moves right across the columns as it progresses: attended or caught up, then recalled and noted, then tested. When moving a card, cut the line into the new column and update its date. Remove it once I've been tested on it in a weekly session.
 
-**`Tracker.md`** holds everything else as checkbox lists under `## Past paper questions this week`, `## Questions for lecturers`, `## Events and deadlines` and `## Other`, one line per item with the module code first. A Tasks plugin query at the top (`## Due soon`) shows overdue items and items due in the next 7 days; don't edit it.
+**`Tracker.md`** holds everything else as checkbox lists under `## Past paper questions this week`, `## Questions for lecturers`, `## Events and deadlines` and `## Other`, one line per item starting with `<Module> - <Code>`. A Tasks plugin query at the top (`## Due soon`) shows overdue items and items due in the next 7 days; don't edit it.
 
-- Give anything with a deadline a Tasks due date: `- [ ] 50002 Coursework 1 📅 2026-10-20`. Sort `Events and deadlines` by date.
+- Give anything with a deadline a Tasks due date: `- [ ] Software Engineering Design - 50002 Coursework 1 📅 2026-10-20`. Sort `Events and deadlines` by date.
 - Mark a finished item with `- [x]` and remove it at the next session start.
 - Flag it if the catch-up list has more than two lectures for one module, or a lecture has sat in any list for more than a week.
 - Don't add items I didn't ask for, other than the lecture steps, weekly questions and lecturer questions this system produces.

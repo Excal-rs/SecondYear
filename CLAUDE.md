@@ -187,11 +187,11 @@ When you create notes for a lecture, add them under that lecture's heading in te
 
 What's outstanding lives in two files. At the start of a session, read both and tell me briefly what's due or overdue. When we finish a step, update them in the same turn.
 
-**`Lectures.md`** is a Kanban board (Kanban plugin) with columns `To catch up on (missed)`, `To watch (partial rewatch)`, `To recall and make notes on`, `To test myself on`. Each card is one line: `- [ ] <Module> - <Code> Lecture N @{YYYY-MM-DD}`, where the date is when it entered its current column. Keep the plugin's frontmatter and the `%% kanban:settings %%` block at the bottom intact.
+**`Lectures.md`** is a Kanban board (Kanban plugin) with columns `To catch up on (missed)`, `To watch (partial rewatch)`, `To recall and make notes on`, `To test myself on`. Each card is one line: `- [ ] <Module> - <Code> Lecture N - <Title> @{YYYY-MM-DD}`, with the title taken from the slides, where the date is when it entered its current column. Keep the plugin's frontmatter and the `%% kanban:settings %%` block at the bottom intact.
 
 - A lecture moves right across the columns as it progresses: attended or caught up, then recalled and noted, then tested. When moving a card, cut the line into the new column and update its date. Remove it once I've been tested on it in a weekly session.
 
-**`Tracker.md`** holds everything else as checkbox lists under `## Past paper questions this week`, `## Questions for lecturers`, `## Events and deadlines` and `## Other`, one line per item starting with `<Module> - <Code>`. A Tasks plugin query at the top (`## Due soon`) shows overdue items and items due in the next 7 days; don't edit it.
+**`Tracker.md`** holds everything else as checkbox lists under `Tutorials`, `Problem Sheets`, `Past Papers`, `Questions for lecturers`, `Events and deadlines` and `Other`, one line per item starting with `<Module> - <Code>`. A Tasks plugin query at the top (`Due soon`) shows overdue items and items due in the next 7 days; don't edit it.
 
 - Give anything with a deadline a Tasks due date: `- [ ] Software Engineering Design - 50002 Coursework 1 📅 2026-10-20`. Sort `Events and deadlines` by date.
 - Mark a finished item with `- [x]` and remove it at the next session start.
@@ -227,7 +227,7 @@ When I explain something to you, act as a critical examiner, not a supportive tu
 Computing gives few problem sheets, so past papers are my main practice. Treat them as a limited resource.
 
 - **Reserved papers:** the three most recent years of each module in `.papers/` are for timed mocks before exams. Never draw weekly questions from them, and never show me their contents unless I say I'm doing a mock.
-- **Weekly session:** each week, find the questions from older papers that match the lectures in "To test myself on", and add one or two questions from earlier weeks' topics. List them under "Past paper questions this week" in the Tracker by paper and question number.
+- **Weekly session:** each week, find the questions from older papers that match the lectures in "To test myself on", and add one or two questions from earlier weeks' topics. List them under "Past Papers" in the Tracker by paper and question number.
 - **Index:** keep `.papers/<Code> - <Module>/Index.md` as a table of paper, question, topic, matching lectures, attempted, and result, so you don't have to re-read every PDF each week.
 - Older papers may cover content that's no longer taught. If a question doesn't match this year's sources, tell me rather than setting it.
 - **Don't give me solutions before I've attempted the question in full.** When marking my attempt, check it against the sources and say how confident you are. For proofs and formal reasoning, be explicit when you're unsure, because I may compare with coursemates.
